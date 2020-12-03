@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PointTest {
-
     @Test
     public void whenDistance1329then728() {
         int x1 = 1;

@@ -12,7 +12,6 @@ public class FactorialTest {
         int rsl = Factorial.calc(5);
         int expected = 120;
         assertThat(rsl, Matchers.is(expected));
-
     }
 
     @Test

@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FitTest {
-
     @Test
     public void whenManWeight175Then8625() {
         short height = 175;

@@ -6,7 +6,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class MergeTest {
-
     @Test
     public void whenBothEmpty() {
         int[] expect = new int[0];

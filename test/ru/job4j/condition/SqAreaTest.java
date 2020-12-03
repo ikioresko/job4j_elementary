@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SqAreaTest {
-
     @Test
     public void whenSquare25to4then25() {
         double p = 25;

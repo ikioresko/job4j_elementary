@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Test;
 
 public class MatrixSumTest {
-
     @Test
     public void whenSingle() {
         int[][] in = {
