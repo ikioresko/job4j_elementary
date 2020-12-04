@@ -3,24 +3,22 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class MaxTest {
     @Test
     public void when5And1max5() {
-        int a = 5;
-        int b = 1;
-        int expected = 5;
-        int out = Max.max(a, b);
-        Assert.assertEquals(expected, out);
+        Max mt = new Max();
+        Assert.assertEquals(5, mt.max(5, 1));
     }
 
     @Test
-    public void when8And15max15() {
-        int a = 8;
-        int b = 15;
-        int expected = 15;
-        int out = Max.max(a, b);
-        Assert.assertEquals(expected, out);
+    public void when8And21And15max21() {
+        Max mt = new Max();
+        Assert.assertEquals(21, mt.max(8, 21, 15));
+    }
+
+    @Test
+    public void when81And21And15And76max81() {
+        Max mt = new Max();
+        Assert.assertEquals(81, mt.max(81, 21, 15, 76));
     }
 }
