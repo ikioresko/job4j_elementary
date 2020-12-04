@@ -6,34 +6,28 @@ import org.junit.Test;
 public class PointTest {
     @Test
     public void whenDistance1329then728() {
-        int x1 = 1;
-        int y1 = 3;
-        int x2 = 2;
-        int y2 = 9;
-        double expected = 7.28;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, 3);
+        Point b = new Point(2, 9);
+        double expected = 6.08;
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void whenDistance2568then5() {
-        int x1 = 2;
-        int y1 = 5;
-        int x2 = 6;
-        int y2 = 8;
+        Point a = new Point(2, 5);
+        Point b = new Point(6, 8);
         double expected = 5.0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void whenDistance7989then1() {
-        int x1 = 7;
-        int y1 = 9;
-        int x2 = 8;
-        int y2 = 9;
+        Point a = new Point(7, 9);
+        Point b = new Point(8, 9);
         double expected = 1.0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
