@@ -1,4 +1,4 @@
-package ru.job4j.Profession;
+package ru.job4j.profession;
 
 public class Surgeon extends Doctor {
     private String operation;
@@ -7,6 +7,7 @@ public class Surgeon extends Doctor {
     public String getOperation() {
         return null;
     }
+
     public String getAutopsy() {
         return null;
     }
